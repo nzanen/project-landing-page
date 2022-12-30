@@ -120,7 +120,7 @@ body {
 }
 
 .content h1 {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: extra-bold;
   color: #1F2937;
   margin-bottom: 2rem;
@@ -173,12 +173,18 @@ body {
 
 /* Seasons */
 
+.seasons-container > h1 {
+  font-size: 2rem;
+  font-weight: extra-bold;
+  color: #1F2937;
+}
+
 .seasons-container {
   padding: 0 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }
