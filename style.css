@@ -21,12 +21,16 @@ body {
 }
 
 /* HEADER */
+/* 
+.header * {
+  border: 2px solid red;
+} */
 
 .header {
   background-color: #1F2937;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 1rem 5rem;
   border-bottom: 2px solid #3882F6;
 }
@@ -41,11 +45,12 @@ body {
 .header-links a {
   font-size: 1rem;
   color: #E5E7EB;
-  text-decoration: none;
+  text-decoration-color: #3882F6;
+  text-decoration-thickness: 5px;
 }
 
 .header-links a:hover {
-  color: #3882F6;
+  text-decoration-color: #E5E7EB;
 }
 
 .header-links ul {
@@ -120,8 +125,10 @@ button a {
 }
 
 .content-cards {
+  padding: 0 5rem;
   display: flex;
   justify-content: center;
+  gap: 2rem;
   font-size: 18px;
   color: #505050;
   margin-bottom: 2rem;
