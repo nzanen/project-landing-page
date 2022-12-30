@@ -11,9 +11,13 @@ body {
 }
 
 .container {
-  border: 2px solid red;
   width: 1200px;
   margin: 0 auto; 
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  border-left: 5px solid #1e1e1e;
+  border-right: 5px solid #1e1e1e;
 }
 
 /* HEADER */
@@ -24,19 +28,24 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
+  border-bottom: 2px solid #3882F6;
 }
 
 .header-logo {
-  font-size: 24px;
+  font-size: 2rem;
   color: #F9FAF8;
   margin: 0;
   padding: 0;
 }
 
 .header-links a {
-  font-size: 18px;
+  font-size: 1rem;
   color: #E5E7EB;
   text-decoration: none;
+}
+
+.header-links a:hover {
+  color: #3882F6;
 }
 
 .header-links ul {
@@ -59,37 +68,41 @@ body {
   padding: 5rem 5rem;
 }
 
-.banner-text {
-  max-width: 50%;
-}
-
 .banner-text h1, p {
   margin-bottom: 1rem;
 }
 
 .banner-text h1 {
-  font-size: 48px;
+  font-size: 1.5rem;
   font-weight: extra-bold;
   color: #F9FAF8;
 }
 
 .banner-text p {
-  font-size: 18px;
+  font-size: 1rem;
   color: #E5E7EB;
+  text-align: justify;
 }
 
 .banner button {
+  box-sizing: border-box;
+  border: 2px solid #3882F6;
   background-color: #3882F6;
   padding: 0.5rem 1rem;
   border-radius: 10px;
+}
+
+.banner button:hover {
+  border: 2px solid #fff;
 }
 
 button a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1rem;
 }
+
 
 /* CONTENT */
 
@@ -118,12 +131,20 @@ button a {
   width: 150px;
 }
 
+.drg-class img {
+  max-width: 100%;
+}
+
 .content-quote {
   background-color: #E5E7EB;
   padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
-.content-quote p {
+.quote {
   font-size: 36px;
   font-weight: light;
   font-style: italic;
@@ -131,13 +152,18 @@ button a {
   text-align: start;
 }
 
-.content-quote h2 {
+.signature {
   color: #1F2937;
   font-size: 18px;
-  text-align: end;
+  margin-left: auto;
+  max-width: 130px;
+  text-align: center;
 }
 
-.content-quote p, h2{
-  max-width: 75%;
-  margin: 0 auto;
+.signature > img {
+  max-width: 150px;
+}
+
+.quote-name {
+  color: #3882F6
 }
