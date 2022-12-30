@@ -20,7 +20,6 @@ body {
 
 .header {
   background-color: #1F2937;
-  /* border: 2px solid #0f0; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,6 +29,8 @@ body {
 .header-logo {
   font-size: 24px;
   color: #F9FAF8;
+  margin: 0;
+  padding: 0;
 }
 
 .header-links a {
@@ -50,13 +51,20 @@ body {
 
 .banner {
   background-color: #1F2937;
-  border: 2px solid #0f0;
-  height: 100vh;
   display: flex;
+  flex: 1;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
   padding: 5rem 5rem;
+}
+
+.banner-text {
+  max-width: 50%;
+}
+
+.banner-text h1, p {
+  margin-bottom: 1rem;
 }
 
 .banner-text h1 {
@@ -81,4 +89,55 @@ button a {
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+}
+
+/* CONTENT */
+
+.content {
+  background-color: ghostwhite;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.content h1 {
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1F2937;
+  margin-bottom: 2rem;
+}
+
+.content-cards {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: #505050;
+  margin-bottom: 2rem;
+}
+
+.drg-class {
+  width: 150px;
+}
+
+.content-quote {
+  background-color: #E5E7EB;
+  padding: 5rem 5rem;
+}
+
+.content-quote p {
+  font-size: 36px;
+  font-weight: light;
+  font-style: italic;
+  color: #1F2937;
+  text-align: start;
+}
+
+.content-quote h2 {
+  color: #1F2937;
+  font-size: 18px;
+  text-align: end;
+}
+
+.content-quote p, h2{
+  max-width: 75%;
+  margin: 0 auto;
 }
