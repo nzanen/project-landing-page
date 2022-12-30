@@ -7,7 +7,7 @@
 
 body {
   background-color: #1e1e1e;
-  font-family: Verdana;
+  font-family: Verdana, sans-serif
 }
 
 .container {
@@ -73,7 +73,8 @@ body {
   padding: 5rem 5rem;
 }
 
-.banner-text h1, p {
+.banner-text h1,
+.banner-text p {
   margin-bottom: 1rem;
 }
 
@@ -87,6 +88,7 @@ body {
   font-size: 1rem;
   color: #E5E7EB;
   text-align: justify;
+  font-weight: 100;
 }
 
 .banner button {
@@ -94,14 +96,14 @@ body {
   border: 2px solid #3882F6;
   background-color: #3882F6;
   padding: 0.5rem 1rem;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .banner button:hover {
   border: 2px solid #fff;
 }
 
-button a {
+.banner button a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -149,28 +151,110 @@ button a {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.quote {
-  font-size: 36px;
-  font-weight: light;
+.content-quote p {
+  font-size: 2rem;
+  font-weight: 100;
   font-style: italic;
   color: #1F2937;
   text-align: start;
 }
 
-.signature {
-  color: #1F2937;
-  font-size: 18px;
-  margin-left: auto;
-  max-width: 130px;
-  text-align: center;
-}
-
-.signature > img {
+#mission-control {
   max-width: 150px;
 }
 
 .quote-name {
-  color: #3882F6
+  color: #3882F6;
+  font-weight: 700;
+}
+
+/* Seasons */
+
+.seasons-container {
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.season img {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.seasons-container p {
+  padding: 0 1rem;
+  text-align: justify;
+}
+.season {
+  display: flex;
+}
+
+.season-header {
+  color: #3882F6;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Call to action */
+
+.action {
+  background-color: #3882F6;
+  padding: 2rem 5rem;
+  margin: 0 5rem;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5rem;
+}
+
+.action-text {
+  text-align: left;
+}
+
+.action-text h2 {
+  font-size: 1.5rem;
+  font-weight: extra-bold;
+  color: #F9FAF8;
+}
+
+.action-text p {
+  color: #E5E7EB;
+}
+
+.action-button {
+  flex-shrink: 0;
+}
+
+.action-button button {
+  box-sizing: border-box;
+  border: 2px solid #F9FAF8;
+  background-color: #3882F6;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+}
+
+.action-button button a {
+  color: #F9FAF8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #1F2937;
+  color: #949494;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem
 }
