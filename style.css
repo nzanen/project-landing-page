@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto; 
   background-color: #1e1e1e;
   display: flex;
@@ -190,8 +190,8 @@ body {
 }
 
 .season img {
-  width: 300px;
-  object-fit: cover;
+  max-width: 300px;
+  object-fit: contain;
   border-radius: 7px;
 }
 
