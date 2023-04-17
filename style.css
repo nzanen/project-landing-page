@@ -93,6 +93,10 @@ p {
   color: #ee6c4d;
 }
 
+.hero-text p {
+  text-align: justify;
+}
+
 /*!----- Content -----*/
 .content {
   padding: 2rem 3rem;
@@ -157,6 +161,10 @@ p {
   grid-template-columns: 350px 1fr;
   grid-column-gap: 3rem;
   grid-row-gap: 2rem;
+}
+
+.seasons-container p {
+  text-align: justify;
 }
 
 .season-title {
