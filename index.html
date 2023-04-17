@@ -1,90 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Project Landing Page</title>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <div class="header-logo"><img src="img/drg-icon.webp"> Deep Rock Galactic</div>
-      <div class="header-links">
-        <ul>
-          <li><a href="https://ghostship.dk/">Ghost Ship Games</a></li>
-          <li><a href="https://www.coffeestainstudios.com/">Coffee Stain Studios</a></li>
-          <li><a href="https://www.youtube.com/@GhostShipGames">DRG YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="banner">
-      <div class="banner-text">
-        <h1>Deep Rock Galactic is awesome</h1>
-        <p>In the far future, space mining is big business.</p>
-        <p>The interplanetary mining corporation DEEP ROCK GALACTIC specializes in securing the most dangerous dig sites in the galaxy. When they need a team for the toughest missions, they call in the Dwarves - mercenary miners, legendary for their ability to survive underground, and infamous for their brutality in combat.</p>
-        <p>Join a team of up to 4 players to fight, dig and explore your way through enormous cave systems, uncover the greatest riches, and make it out alive.</p>
-        <button><a href="https://store.steampowered.com/app/548430/Deep_Rock_Galactic/">Buy here</a></button>
-      </div>
-      <div class="banner-image">
-        <!-- <img src="img/banner-drg.jpg" alt="Deep Rock Galactic Steam"> -->
-        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/__ydQwf_Hng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="content">
-      <h1>The four different classes</h1>
-      <div class="content-cards">
-        <div class="drg-class" id="driller"><img src="img/driller.webp"><br>
-          <strong>Driller</strong><p>Drills the earth and blows up rocks</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <img class="header-logo" src="img/Logo_DRG_NoShadow_NoSub.png" />
+        <a class="header-link" target="_blank" href="#"> Ghost Ship Games</a>
+        <a class="header-link" target="_blank" href="#">
+          Coffee Stain Publishing</a
+        >
+        <a class="header-link" target="_blank" href="#"> DRG YouTube</a>
+      </section>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h1>DANGER. DARKNESS. DWARVES.</h1>
+          <p>
+            In the far future, space mining is big business.<br /><br />
+
+            The interplanetary mining corporation DEEP ROCK GALACTIC specializes
+            in securing the most dangerous dig sites in the galaxy. When they
+            need a team for the toughest missions, they call in the Dwarves -
+            mercenary miners, legendary for their ability to survive
+            underground, and infamous for their brutality in combat.<br /><br />
+
+            Join a team of up to 4 players to fight, dig and explore your way
+            through enormous cave systems, uncover the greatest riches, and make
+            it out alive.
+          </p>
         </div>
-        <div class="drg-class" id="engineer"><img src="img/engineer.webp"><br>
-          <strong>Engineer</strong><p>Builds turrets and shoots platforms</p>
+        <div class="hero-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/k4m_5JYrAGM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="drg-class" id="gunner"><img src="img/gunner.webp"><br>
-          <strong>Gunner</strong><p>Rains bullets and provides shielding</p>
-        </div>
-        <div class="drg-class" id="scout"><img src="img/scout.webp"><br>
-          <strong>Scout</strong><p>Lights up the caves and explores</p>
-        </div>
-      </div>
-      <div class="content-quote">
-        <img id="mission-control" src="img/mission-control.webp">
-        <p><span class="quote-name">Mission Control</span><br>
-        Take on the deadliest planet in the known galaxy as a team of dwarven mercenary miners in our upcoming procedurally generated co-op sci-fi shooter</p>
+      </section>
+      <section class="content"><h1>CONTENT</h1></section>
+      <section class="footer"><h1>FOOTER</h1></section>
     </div>
-    <div class="seasons-container">
-      <h1>New content every season!</h1>
-      <div class="season">
-        <img src="img/season1.webp" alt="season 1">
-        <p><span class="season-header">Season 01: Rival Incursion</span><br>
-          Season 01: Rival Incursion introduces Seasons to Deep Rock Galactic and the Performance Pass system, a new mission called "Industrial Sabotage", four brand new primary weapons for each class respectively, and new Rival Tech enemies.</p>
-      </div>
-      <div class="season">
-        <img src="img/season2.webp" alt="season 2">
-        <p><span class="season-header">Season 02: Rival Escalation</span><br>
-          Season 02: Rival Escalation introduces a new season to Deep Rock Galactic with a new Performance Pass, four brand new secondary weapons for each class respectively, a new Rival Tech encounter and Phazyonite resource.</p>
-      </div>
-      <div class="season">
-        <img src="img/season3.webp" alt="season 3">
-        <p><span class="season-header">Season 03: Plaguefall</span><br>
-          Season 3 will add a number of new features to the game. Season 3 revolves around the invasion of the "Rockpox" plague.</p>
-      </div>
-    </div>
-    <div class="action">
-      <div class="action-text">
-        <h2>Don't wait; buy now!</h2>
-        <p>Start your mining adventure on Hoxxes today!</p></div>
-      <div class="action-button">
-        <button><a href="https://store.steampowered.com/app/548430/Deep_Rock_Galactic/">Buy now!</a></button>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <p>
-    Made by Niels - 2022<br>
-    Copyright © to all respective owners
-    </p>
-  </div>
-</body>
+  </body>
 </html>

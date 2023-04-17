@@ -1,266 +1,87 @@
+/*
+ COLORS
+Background: #1e1e1e 
+Shading: #1f2937
+Highlight: #3882f6
+Text: #f9faf8
+
+*/
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #1e1e1e;
-  font-family: Verdana, sans-serif
+  color: #f9faf8;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto; 
-  background-color: #1e1e1e;
-  display: flex;
-  flex-direction: column;
-  border-left: 5px solid #1e1e1e;
-  border-right: 5px solid #1e1e1e;
+  background-color: #1f2937;
+  max-width: 1300px;
+  height: 100vh;
+  margin: 0 auto;
 }
 
-/* HEADER */
-/* 
-.header * {
-  border: 2px solid red;
-} */
+h1,
+h2 {
+  font-family: 'Bebas Neue', cursive;
+}
 
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Header */
 .header {
-  background-color: #1F2937;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 1rem 5rem;
-  border-bottom: 2px solid #3882F6;
+  align-items: center;
+  padding: 2rem 3rem;
+  border-bottom: 3px solid #3882f6;
 }
 
 .header-logo {
-  font-size: 2rem;
-  color: #F9FAF8;
-  margin: 0;
-  padding: 0;
+  width: 300px;
+  margin-right: auto;
 }
 
-.header-links a {
-  font-size: 1rem;
-  color: #E5E7EB;
-  text-decoration-color: #3882F6;
-  text-decoration-thickness: 5px;
-}
-
-.header-links a:hover {
-  text-decoration-color: #E5E7EB;
-}
-
-.header-links ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 2rem;
-}
-
-/* BANNER */
-
-.banner {
-  background-color: #1F2937;
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 5rem 5rem;
-}
-
-.banner-text h1,
-.banner-text p {
-  margin-bottom: 1rem;
-}
-
-.banner-text h1 {
-  font-size: 1.5rem;
-  font-weight: extra-bold;
-  color: #F9FAF8;
-}
-
-.banner-text p {
-  font-size: 1rem;
-  color: #E5E7EB;
-  text-align: justify;
-  font-weight: 100;
-}
-
-.banner button {
-  box-sizing: border-box;
-  border: 2px solid #3882F6;
-  background-color: #3882F6;
-  padding: 0.5rem 1rem;
-  border-radius: 7px;
-}
-
-.banner button:hover {
-  border: 2px solid #fff;
-}
-
-.banner button a {
-  color: white;
+.header-link:link,
+.header-link:visited {
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
+  color: #f9faf8;
+  background-color: #3882f6;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
 }
 
+/* Hero */
+.hero {
+  display: flex;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+}
 
-/* CONTENT */
+.hero-text {
+  padding: 0;
+  margin: 0;
+}
 
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-right: 3rem;
+}
 .content {
-  background-color: ghostwhite;
-  text-align: center;
-  padding: 2rem 0;
+  background-color: #f9faf8;
+  color: black;
 }
-
-.content h1 {
-  font-size: 2rem;
-  font-weight: extra-bold;
-  color: #1F2937;
-  margin-bottom: 2rem;
-}
-
-.content-cards {
-  padding: 0 5rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 18px;
-  color: #505050;
-  margin-bottom: 2rem;
-}
-
-.drg-class {
-  width: 150px;
-}
-
-.drg-class img {
-  max-width: 100%;
-}
-
-.content-quote {
-  background-color: #E5E7EB;
-  padding: 5rem 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.content-quote p {
-  font-size: 2rem;
-  font-weight: 100;
-  font-style: italic;
-  color: #1F2937;
-  text-align: start;
-}
-
-#mission-control {
-  max-width: 150px;
-}
-
-.quote-name {
-  color: #3882F6;
-  font-weight: 700;
-}
-
-/* Seasons */
-
-.seasons-container > h1 {
-  font-size: 2rem;
-  font-weight: extra-bold;
-  color: #1F2937;
-}
-
-.seasons-container {
-  padding: 0 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.season img {
-  max-width: 300px;
-  object-fit: contain;
-  border-radius: 7px;
-}
-
-.seasons-container p {
-  padding: 0 1rem;
-  text-align: justify;
-}
-.season {
-  display: flex;
-}
-
-.season-header {
-  color: #3882F6;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-/* Call to action */
-
-.action {
-  background-color: #3882F6;
-  padding: 2rem 5rem;
-  margin: 0 5rem;
-  border-radius: 7px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 5rem;
-}
-
-.action-text {
-  text-align: left;
-}
-
-.action-text h2 {
-  font-size: 1.5rem;
-  font-weight: extra-bold;
-  color: #F9FAF8;
-}
-
-.action-text p {
-  color: #E5E7EB;
-}
-
-.action-button {
-  flex-shrink: 0;
-}
-
-.action-button button {
-  box-sizing: border-box;
-  border: 2px solid #F9FAF8;
-  background-color: #3882F6;
-  padding: 0.5rem 1rem;
-  border-radius: 7px;
-}
-
-.action-button button a {
-  color: #F9FAF8;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-/* Footer */
-
 .footer {
-  background-color: #1F2937;
-  color: #949494;
-  text-align: center;
-  padding: 2rem 0;
-  font-size: 0.75rem
+  background-color: #1f2937;
 }
