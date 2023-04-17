@@ -1,10 +1,11 @@
+/*!----- Colors -----*/
 /*
- COLORS
-Background: #1e1e1e 
-Shading: #1f2937
-Highlight: #3882f6
-Text: #f9faf8
-
+--coral: #ef8354;
+--white: #f9faf8;
+--silver: #bfc0c0;
+--lapis-lazuli: #426299;
+--gunmetal: #2a2d39;
+--jet: #333333;
 */
 
 * {
@@ -14,50 +15,69 @@ Text: #f9faf8
 }
 
 body {
-  background-color: #1e1e1e;
+  background-color: #333333;
   color: #f9faf8;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*!----- Fonts -----*/
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .container {
-  background-color: #1f2937;
+  background-color: #2a2d39;
   max-width: 1300px;
   height: 100vh;
   margin: 0 auto;
 }
 
-h1,
-h2 {
-  font-family: 'Bebas Neue', cursive;
-}
-
-p {
-  font-family: 'Roboto Slab', serif;
-}
-
-/* Header */
+/*!----- Header -----*/
 .header {
   display: flex;
   align-items: center;
   padding: 2rem 3rem;
-  border-bottom: 3px solid #3882f6;
+  border-bottom: 3px solid #bfc0c0;
 }
 
 .header-logo {
-  width: 300px;
+  height: 6rem;
   margin-right: auto;
+}
+
+.header-link {
+  text-decoration: none;
+  padding: 1rem;
+  padding-bottom: 0.8rem;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  line-height: 1;
 }
 
 .header-link:link,
 .header-link:visited {
-  text-decoration: none;
   color: #f9faf8;
-  background-color: #3882f6;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  margin-left: 2rem;
+  background-color: #426299;
+  transition: all 0.3s;
 }
 
-/* Hero */
+.header-link:hover,
+.header-link:active {
+  background-color: #ee6c4d;
+  color: black;
+}
+
+/*!----- Hero -----*/
 .hero {
   display: flex;
   padding: 2rem 3rem;
@@ -66,22 +86,71 @@ p {
 
 .hero-text {
   padding: 0;
-  margin: 0;
+  margin-right: 3rem;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  color: #ee6c4d;
 }
 
-.hero-text p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-right: 3rem;
-}
+/*!----- Content -----*/
 .content {
+  padding: 2rem 3rem;
+  margin: 0 auto;
   background-color: #f9faf8;
-  color: black;
+  height: 100%;
+  position: relative;
 }
+
+.content h1 {
+  color: #333333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.class-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin: 0 6rem;
+  margin-bottom: 2rem;
+}
+
+.class-content {
+  text-align: center;
+  color: #333333;
+}
+
+.quote-container {
+  background-color: #bfc0c0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem;
+  gap: 3rem;
+}
+
+.quote-container img {
+  width: 20rem;
+}
+
+.quote-container p {
+  color: #333;
+  font-size: 2rem;
+  line-height: 1;
+  font-style: italic;
+}
+
+.quote-container span {
+  color: #426299;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* --------------------- */
+
 .footer {
   background-color: #1f2937;
 }
