@@ -158,7 +158,7 @@ p {
   margin: 0 auto;
   display: grid;
   justify-content: center;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 3rem;
   grid-row-gap: 2rem;
 }
@@ -171,12 +171,6 @@ p {
   font-weight: 800;
   font-size: 1.5rem;
   color: #426299;
-}
-
-.season-img {
-  width: 100%;
-  border-radius: 0.5rem;
-  border: 3px solid #426299;
 }
 
 .purchase {
