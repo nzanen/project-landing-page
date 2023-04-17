@@ -98,22 +98,22 @@ p {
   padding: 2rem 3rem;
   margin: 0 auto;
   background-color: #f9faf8;
-  height: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .content h1 {
   color: #333333;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .class-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-  margin: 0 6rem;
-  margin-bottom: 2rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .class-content {
@@ -123,9 +123,8 @@ p {
 
 .quote-container {
   background-color: #bfc0c0;
-  position: absolute;
-  width: 100%;
-  left: 0;
+  width: calc(100% + 6rem);
+  margin-left: -3rem;
   display: flex;
   align-items: center;
   padding: 2rem 3rem;
@@ -149,8 +148,58 @@ p {
   font-style: normal;
 }
 
-/* --------------------- */
+.seasons-container {
+  color: #2a2d39;
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 350px 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+}
 
+.season-title {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #426299;
+}
+
+.season-img {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 3px solid #426299;
+}
+
+.purchase {
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 1rem 2rem 0.8rem 2rem;
+  border-radius: 1rem;
+}
+
+.purchase:link,
+.purchase:visited {
+  color: #333333;
+  background-color: #ef8354;
+}
+
+.purchase:hover,
+.purchase:active {
+  color: #ef8354;
+  background-color: #2a2d39;
+}
+
+/*!----- Footer -----*/
 .footer {
   background-color: #1f2937;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer p {
+  color: #bfc0c0;
+  font-size: 0.8rem;
 }
