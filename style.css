@@ -43,20 +43,26 @@ p {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 2rem 3rem;
   border-bottom: 3px solid #bfc0c0;
 }
 
 .header-logo {
   height: 6rem;
-  margin-right: auto;
 }
 
+.header-link-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  min-width: 450px;
+}
 .header-link {
   text-decoration: none;
   padding: 1rem;
   padding-bottom: 0.8rem;
-  margin-left: 2rem;
   border-radius: 0.5rem;
 
   font-family: 'Bebas Neue', cursive;
@@ -82,6 +88,7 @@ p {
   display: flex;
   padding: 2rem 3rem;
   margin: 0 auto;
+  align-items: flex-start;
 }
 
 .hero-text {
@@ -144,6 +151,8 @@ p {
   font-size: 2rem;
   line-height: 1;
   font-style: italic;
+  text-align: justify;
+  margin-right: 2rem;
 }
 
 .quote-container span {
@@ -204,4 +213,74 @@ p {
 .footer p {
   color: #bfc0c0;
   font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .hero {
+    align-items: center;
+  }
+
+  .header-logo {
+    height: 3rem;
+  }
+
+  .header-link {
+    font-size: 1.5rem;
+  }
+
+  .seasons-container {
+    max-width: 95%;
+    grid-column-gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    min-width: 700px;
+  }
+  .header-link {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 560px;
+    padding: 2rem 0;
+  }
+
+  .hero-text {
+    margin: 0;
+  }
+
+  .class-container {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .quote-container {
+    gap: 0.5rem;
+  }
+
+  .quote-container img {
+    width: 10rem;
+  }
+
+  .quote-container p {
+    font-size: 1.5rem;
+  }
+
+  .seasons-container {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seasons-container iframe {
+    width: 560px;
+    height: 315px;
+  }
 }
