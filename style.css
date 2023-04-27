@@ -195,6 +195,7 @@ p {
 .purchase:visited {
   color: #333333;
   background-color: #ef8354;
+  transition: all 0.3s;
 }
 
 .purchase:hover,
